@@ -1,0 +1,237 @@
+{
+  "keyword": "all in one ai video generator",
+  "title": "Best All in One AI Video Generator Tools (2026)",
+  "lastChecked": "2026-09-06",
+  "capabilityChecks": [
+    {
+      "key": "multiModel",
+      "label": "Multi model"
+    },
+    {
+      "key": "nativeAssembly",
+      "label": "Native assembly"
+    },
+    {
+      "key": "restApi",
+      "label": "REST API"
+    },
+    {
+      "key": "batchFanOut",
+      "label": "Batch fan out"
+    },
+    {
+      "key": "costVisibility",
+      "label": "Cost visibility"
+    }
+  ],
+  "tools": [
+    {
+      "n": 1,
+      "name": "Wireflow",
+      "tagline": "Best Overall",
+      "homepage": "https://www.wireflow.ai",
+      "docs": "https://www.wireflow.ai/docs/mcp",
+      "pricing": "https://www.wireflow.ai/pricing",
+      "claudeConnection": "First-party hosted MCP (Streamable HTTP, OAuth)",
+      "restApi": true,
+      "modelSupport": "Multi-model catalog across image, video and audio nodes",
+      "freeTier": "yes",
+      "repo": null,
+      "note": null,
+      "quickstart": [
+        {
+          "label": "Add the hosted MCP server to Claude Code, then approve the OAuth consent screen:",
+          "lang": "bash",
+          "code": "claude mcp add --transport http wireflow https://www.wireflow.ai/api/mcp"
+        },
+        {
+          "label": "In Claude Desktop or claude.ai, add the same URL as a custom connector. Read-only tools (`list_workflows`, `list_models`, `get_execution`) cost nothing; `run_workflow` is the only one that spends credits.",
+          "lang": "text",
+          "code": "https://www.wireflow.ai/api/mcp"
+        }
+      ],
+      "capabilities": {
+        "multiModel": true,
+        "nativeAssembly": true,
+        "restApi": true,
+        "batchFanOut": true,
+        "costVisibility": true
+      },
+      "live": {
+        "stars": null,
+        "lastPush": null,
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": null
+      }
+    },
+    {
+      "n": 2,
+      "name": "Runway",
+      "tagline": "cloud creative suite built around its own Gen-4.5 model",
+      "homepage": "https://runwayml.com",
+      "docs": "https://docs.dev.runwayml.com",
+      "pricing": "https://runwayml.com/pricing",
+      "claudeConnection": "First-party MCP server, run locally from Runway's own repo",
+      "restApi": true,
+      "modelSupport": "Runway's own model family plus third-party models, queryable at runtime",
+      "freeTier": "unverified",
+      "repo": "runwayml/runway-api-mcp-server",
+      "note": null,
+      "quickstart": [
+        {
+          "label": "The MCP server is not published to npm — clone and build it, then point your MCP config at `build/index.js`. Needs a Runway developer API key.",
+          "lang": "bash",
+          "code": "git clone https://github.com/runwayml/runway-api-mcp-server\ncd runway-api-mcp-server\nnpm install\nnpm run build"
+        },
+        {
+          "label": "The official SDKs cover the same API without MCP:",
+          "lang": "bash",
+          "code": "npm install @runwayml/sdk   # https://github.com/runwayml/sdk-node\npip install runwayml         # https://github.com/runwayml/sdk-python"
+        }
+      ],
+      "capabilities": {
+        "multiModel": false,
+        "nativeAssembly": true,
+        "restApi": true,
+        "batchFanOut": false,
+        "costVisibility": false
+      },
+      "live": {
+        "stars": 22,
+        "lastPush": "2026-08-17T14:46:35Z",
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": "2026-09-06"
+      }
+    },
+    {
+      "n": 3,
+      "name": "Canva",
+      "tagline": "design platform with Veo 3 clips inside its existing editor",
+      "homepage": "https://www.canva.com",
+      "docs": "https://www.canva.dev/docs/connect/",
+      "pricing": "https://www.canva.com/pricing/",
+      "claudeConnection": "No first-party MCP server documented",
+      "restApi": true,
+      "modelSupport": "Canva’s own generative features inside the editor",
+      "freeTier": "unverified",
+      "repo": "canva-sdks/canva-connect-api-starter-kit",
+      "note": "The public API is the Canva Connect API. Canva publishes an OpenAPI spec at https://www.canva.dev/sources/connect/api/latest/api.yml rather than a first-party client package.",
+      "quickstart": [
+        {
+          "label": "Quickstart copied verbatim from Canva’s Connect API docs:",
+          "lang": "bash",
+          "code": "git clone https://github.com/canva-sdks/canva-connect-api-starter-kit.git\ncd canva-connect-api-starter-kit\nnpm install"
+        }
+      ],
+      "capabilities": {
+        "multiModel": false,
+        "nativeAssembly": true,
+        "restApi": false,
+        "batchFanOut": false,
+        "costVisibility": false
+      },
+      "live": {
+        "stars": 231,
+        "lastPush": "2026-09-02T23:06:07Z",
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": "2026-09-06"
+      }
+    },
+    {
+      "n": 4,
+      "name": "CapCut",
+      "tagline": "consumer editor with AI generation on a real timeline",
+      "homepage": "https://www.capcut.com",
+      "docs": null,
+      "pricing": null,
+      "claudeConnection": "No first-party MCP server documented",
+      "restApi": false,
+      "modelSupport": "CapCut’s own in-editor AI features",
+      "freeTier": "unverified",
+      "repo": null,
+      "note": "Checked 2026-09-01: no public developer docs and no reachable pricing page URL — every pricing path tried returned 404, so nothing is linked rather than guessing one.",
+      "quickstart": null,
+      "capabilities": {
+        "multiModel": false,
+        "nativeAssembly": true,
+        "restApi": false,
+        "batchFanOut": false,
+        "costVisibility": false
+      },
+      "live": {
+        "stars": null,
+        "lastPush": null,
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": null
+      }
+    },
+    {
+      "n": 5,
+      "name": "VEED",
+      "tagline": "browser editor with avatars, voice cloning and subtitles",
+      "homepage": "https://www.veed.io",
+      "docs": "https://www.veed.io/api",
+      "pricing": "https://www.veed.io/pricing",
+      "claudeConnection": "No first-party MCP server documented",
+      "restApi": true,
+      "modelSupport": "VEED’s own AI video, lip-sync and subtitle models",
+      "freeTier": "unverified",
+      "repo": null,
+      "note": null,
+      "quickstart": null,
+      "capabilities": {
+        "multiModel": false,
+        "nativeAssembly": true,
+        "restApi": false,
+        "batchFanOut": false,
+        "costVisibility": false
+      },
+      "live": {
+        "stars": null,
+        "lastPush": null,
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": null
+      }
+    },
+    {
+      "n": 6,
+      "name": "Descript",
+      "tagline": "text-based editor that cuts video via the transcript",
+      "homepage": "https://www.descript.com",
+      "docs": "https://docs.descriptapi.com",
+      "pricing": "https://www.descript.com/pricing",
+      "claudeConnection": "Descript documents a Claude/MCP integration alongside its CLI and HTTP API",
+      "restApi": true,
+      "modelSupport": "Descript’s own editing, transcription and voice models",
+      "freeTier": "unverified",
+      "repo": null,
+      "note": "Descript states API access is included for all paying users at no extra cost, drawing on existing plan credits. Base URL https://descriptapi.com/v1, `Authorization: Bearer` auth.",
+      "quickstart": [
+        {
+          "label": "CLI install copied verbatim from Descript’s API docs:",
+          "lang": "bash",
+          "code": "npm install -g @descript/platform-cli@latest\ndescript-api config set api-key"
+        }
+      ],
+      "capabilities": {
+        "multiModel": false,
+        "nativeAssembly": true,
+        "restApi": false,
+        "batchFanOut": false,
+        "costVisibility": false
+      },
+      "live": {
+        "stars": null,
+        "lastPush": null,
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": null
+      }
+    }
+  ]
+}
