@@ -232,6 +232,41 @@
         "latestReleaseDate": null,
         "checkedAt": null
       }
+    },
+    {
+      "n": 7,
+      "name": "OrkasVideoStudio",
+      "tagline": "local-first video assembly toolkit for coding agents",
+      "homepage": "https://github.com/Orkas-AI/Orkas-VideoStudio",
+      "docs": "https://github.com/Orkas-AI/Orkas-VideoStudio#install",
+      "pricing": null,
+      "claudeConnection": "First-party local MCP server, installed from source",
+      "restApi": false,
+      "modelSupport": "Bring-your-own image, video and TTS providers; zero-key compose and edit trunk",
+      "freeTier": "yes",
+      "repo": "Orkas-AI/Orkas-VideoStudio",
+      "note": "The npm packages are not published yet. Install from source; generation needs user-supplied provider keys.",
+      "quickstart": [
+        {
+          "label": "Install and build the official source, then point an MCP client at the built server:",
+          "lang": "bash",
+          "code": "git clone https://github.com/Orkas-AI/Orkas-VideoStudio.git\ncd Orkas-VideoStudio\npnpm install && pnpm build\nnode packages/mcp/dist/index.js"
+        }
+      ],
+      "capabilities": {
+        "multiModel": true,
+        "nativeAssembly": true,
+        "restApi": false,
+        "batchFanOut": false,
+        "costVisibility": false
+      },
+      "live": {
+        "stars": 492,
+        "lastPush": "2026-09-04T12:12:00Z",
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": "2026-09-08"
+      }
     }
   ]
 }
