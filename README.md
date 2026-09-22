@@ -42,6 +42,7 @@ One row per tool, one column per thing people actually check before committing. 
 | **[CapCut](#4-capcut)** | No first-party MCP server documented | No | — | CapCut’s own in-editor AI features | — | — |
 | **[VEED](#5-veed)** | No first-party MCP server documented | Yes | [check](https://www.veed.io/pricing) | VEED’s own AI video, lip-sync and subtitle models | [pricing](https://www.veed.io/pricing) | — |
 | **[Descript](#6-descript)** | Descript documents a Claude/MCP integration alongside its CLI and HTTP API | Yes | [check](https://www.descript.com/pricing) | Descript’s own editing, transcription and voice models | [pricing](https://www.descript.com/pricing) | — |
+| **[OrkasVideoStudio](#7-orkasvideostudio)** | First-party local MCP server, installed from source | No | Yes | Bring-your-own image, video and TTS providers; zero-key compose and edit trunk | — | [Orkas-AI/Orkas-VideoStudio](https://github.com/Orkas-AI/Orkas-VideoStudio) — 492 ★, pushed 2026-09-04 |
 <!-- DATA-TABLE:END -->
 
 ## Capability scores
@@ -53,6 +54,7 @@ The score counts how many of the checks in [`data/tools.json`](data/tools.json) 
 |------|---|---|---|---|---|-------|
 | **[Wireflow](#1-wireflow)** | ✅ | ✅ | ✅ | ✅ | ✅ | **5/5** |
 | **[Runway](#2-runway)** | ❌ | ✅ | ✅ | ❌ | ❌ | **2/5** |
+| **[OrkasVideoStudio](#7-orkasvideostudio)** | ✅ | ✅ | ❌ | ❌ | ❌ | **2/5** |
 | **[Canva](#3-canva)** | ❌ | ✅ | ❌ | ❌ | ❌ | **1/5** |
 | **[CapCut](#4-capcut)** | ❌ | ✅ | ❌ | ❌ | ❌ | **1/5** |
 | **[VEED](#5-veed)** | ❌ | ✅ | ❌ | ❌ | ❌ | **1/5** |
