@@ -7,7 +7,7 @@ A maintained dataset of **all in one ai video generator** options: what each one
 The tables below are generated from [`data/tools.json`](data/tools.json). Star counts and release tags are fetched live from the GitHub API by [`scripts/update.js`](scripts/update.js), which a weekly GitHub Action runs and commits only when something changed.
 
 <!-- LAST-CHECKED:START -->
-Live repository data last checked **2026-09-21** by [`scripts/update.js`](scripts/update.js), which runs weekly via GitHub Actions.
+Live repository data last checked **2026-09-28** by [`scripts/update.js`](scripts/update.js), which runs weekly via GitHub Actions.
 <!-- LAST-CHECKED:END -->
 
 Maintained by [a1adams](https://github.com/a1adams). Corrections welcome — see [CONTRIBUTING.md](CONTRIBUTING.md).
@@ -37,8 +37,8 @@ One row per tool, one column per thing people actually check before committing. 
 | Tool | Claude connection | REST API | Free tier | Model support | Pricing | Open-source SDK / MCP |
 |---|---|---|---|---|---|---|
 | **[Wireflow](#1-wireflow)** | First-party hosted MCP (Streamable HTTP, OAuth) | Yes | Yes | Multi-model catalog across image, video and audio nodes | [pricing](https://www.wireflow.ai/pricing) | — |
-| **[Runway](#2-runway)** | First-party MCP server, run locally from Runway's own repo | Yes | [check](https://runwayml.com/pricing) | Runway's own model family plus third-party models, queryable at runtime | [pricing](https://runwayml.com/pricing) | [runwayml/runway-api-mcp-server](https://github.com/runwayml/runway-api-mcp-server) — 22 ★, pushed 2026-08-17 |
-| **[Canva](#3-canva)** | No first-party MCP server documented | Yes | [check](https://www.canva.com/pricing/) | Canva’s own generative features inside the editor | [pricing](https://www.canva.com/pricing/) | [canva-sdks/canva-connect-api-starter-kit](https://github.com/canva-sdks/canva-connect-api-starter-kit) — 232 ★, pushed 2026-09-02 |
+| **[Runway](#2-runway)** | First-party MCP server, run locally from Runway's own repo | Yes | [check](https://runwayml.com/pricing) | Runway's own model family plus third-party models, queryable at runtime | [pricing](https://runwayml.com/pricing) | [runwayml/runway-api-mcp-server](https://github.com/runwayml/runway-api-mcp-server) — 23 ★, pushed 2026-08-17 |
+| **[Canva](#3-canva)** | No first-party MCP server documented | Yes | [check](https://www.canva.com/pricing/) | Canva’s own generative features inside the editor | [pricing](https://www.canva.com/pricing/) | [canva-sdks/canva-connect-api-starter-kit](https://github.com/canva-sdks/canva-connect-api-starter-kit) — 232 ★, pushed 2026-09-23 |
 | **[CapCut](#4-capcut)** | No first-party MCP server documented | No | — | CapCut’s own in-editor AI features | — | — |
 | **[VEED](#5-veed)** | No first-party MCP server documented | Yes | [check](https://www.veed.io/pricing) | VEED’s own AI video, lip-sync and subtitle models | [pricing](https://www.veed.io/pricing) | — |
 | **[Descript](#6-descript)** | Descript documents a Claude/MCP integration alongside its CLI and HTTP API | Yes | [check](https://www.descript.com/pricing) | Descript’s own editing, transcription and voice models | [pricing](https://www.descript.com/pricing) | — |
