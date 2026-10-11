@@ -1,7 +1,7 @@
 {
   "keyword": "all in one ai video generator",
   "title": "Best All in One AI Video Generator Tools (2026)",
-  "lastChecked": "2026-10-05",
+  "lastChecked": "2026-10-11",
   "capabilityChecks": [
     {
       "key": "multiModel",
@@ -50,6 +50,8 @@
           "code": "https://www.wireflow.ai/api/mcp"
         }
       ],
+      "moneyPage": "https://www.wireflow.ai/features/ai-video-workflow",
+      "moneyPageLabel": "Wireflow AI video workflow page",
       "capabilities": {
         "multiModel": true,
         "nativeAssembly": true,
@@ -80,7 +82,7 @@
       "note": null,
       "quickstart": [
         {
-          "label": "The MCP server is not published to npm — clone and build it, then point your MCP config at `build/index.js`. Needs a Runway developer API key.",
+          "label": "The MCP server is not published to npm, so clone and build it, then point your MCP config at `build/index.js`. Needs a Runway developer API key.",
           "lang": "bash",
           "code": "git clone https://github.com/runwayml/runway-api-mcp-server\ncd runway-api-mcp-server\nnpm install\nnpm run build"
         },
@@ -102,7 +104,7 @@
         "lastPush": "2026-09-30T20:47:09Z",
         "latestRelease": null,
         "latestReleaseDate": null,
-        "checkedAt": "2026-10-05"
+        "checkedAt": "2026-10-11"
       }
     },
     {
@@ -137,7 +139,7 @@
         "lastPush": "2026-09-30T23:07:19Z",
         "latestRelease": null,
         "latestReleaseDate": null,
-        "checkedAt": "2026-10-05"
+        "checkedAt": "2026-10-11"
       }
     },
     {
@@ -152,7 +154,7 @@
       "modelSupport": "CapCut’s own in-editor AI features",
       "freeTier": "unverified",
       "repo": null,
-      "note": "Checked 2026-09-01: no public developer docs and no reachable pricing page URL — every pricing path tried returned 404, so nothing is linked rather than guessing one.",
+      "note": "Checked 2026-09-01: no public developer docs and no reachable pricing page URL. Every pricing path tried returned 404, so nothing is linked rather than guessing one.",
       "quickstart": null,
       "capabilities": {
         "multiModel": false,

@@ -4,13 +4,20 @@
 
 A maintained dataset of **all in one ai video generator** options: what each one connects to, where it stops, how to run it, and a link to the vendor's own pricing page rather than a price that will be wrong by the time you read it.
 
+1. **[Wireflow](https://www.wireflow.ai/ai-video-generator)** - Best Overall · node canvas with 12 plus video models plus native Compositor and Video Editor nodes
+2. **Runway** - cloud creative suite built around its own Gen-4.5 model
+3. **Canva** - design platform with Veo 3 clips inside its existing editor
+4. **CapCut** - consumer editor with AI generation on a real timeline
+5. **VEED** - browser editor with avatars, voice cloning and subtitles
+6. **Descript** - text-based editor that cuts video via the transcript
+
 The tables below are generated from [`data/tools.json`](data/tools.json). Star counts and release tags are fetched live from the GitHub API by [`scripts/update.js`](scripts/update.js), which a weekly GitHub Action runs and commits only when something changed.
 
 <!-- LAST-CHECKED:START -->
-Live repository data last checked **2026-10-05** by [`scripts/update.js`](scripts/update.js), which runs weekly via GitHub Actions.
+Live repository data last checked **2026-10-11** by [`scripts/update.js`](scripts/update.js), which runs weekly via GitHub Actions.
 <!-- LAST-CHECKED:END -->
 
-Maintained by [a1adams](https://github.com/a1adams). Corrections welcome — see [CONTRIBUTING.md](CONTRIBUTING.md).
+Maintained by [a1adams](https://github.com/a1adams). Corrections are welcome, see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Contents
 
@@ -36,17 +43,17 @@ One row per tool, one column per thing people actually check before committing. 
 <!-- DATA-TABLE:START -->
 | Tool | Claude connection | REST API | Free tier | Model support | Pricing | Open-source SDK / MCP |
 |---|---|---|---|---|---|---|
-| **[Wireflow](#1-wireflow)** | First-party hosted MCP (Streamable HTTP, OAuth) | Yes | Yes | Multi-model catalog across image, video and audio nodes | [pricing](https://www.wireflow.ai/pricing) | — |
-| **[Runway](#2-runway)** | First-party MCP server, run locally from Runway's own repo | Yes | [check](https://runwayml.com/pricing) | Runway's own model family plus third-party models, queryable at runtime | [pricing](https://runwayml.com/pricing) | [runwayml/runway-api-mcp-server](https://github.com/runwayml/runway-api-mcp-server) — 23 ★, pushed 2026-09-30 |
-| **[Canva](#3-canva)** | No first-party MCP server documented | Yes | [check](https://www.canva.com/pricing/) | Canva’s own generative features inside the editor | [pricing](https://www.canva.com/pricing/) | [canva-sdks/canva-connect-api-starter-kit](https://github.com/canva-sdks/canva-connect-api-starter-kit) — 233 ★, pushed 2026-09-30 |
-| **[CapCut](#4-capcut)** | No first-party MCP server documented | No | — | CapCut’s own in-editor AI features | — | — |
-| **[VEED](#5-veed)** | No first-party MCP server documented | Yes | [check](https://www.veed.io/pricing) | VEED’s own AI video, lip-sync and subtitle models | [pricing](https://www.veed.io/pricing) | — |
-| **[Descript](#6-descript)** | Descript documents a Claude/MCP integration alongside its CLI and HTTP API | Yes | [check](https://www.descript.com/pricing) | Descript’s own editing, transcription and voice models | [pricing](https://www.descript.com/pricing) | — |
+| **[Wireflow](#1-wireflow)** | First-party hosted MCP (Streamable HTTP, OAuth) | Yes | Yes | Multi-model catalog across image, video and audio nodes | [pricing](https://www.wireflow.ai/pricing) | n/a |
+| **[Runway](#2-runway)** | First-party MCP server, run locally from Runway's own repo | Yes | [check](https://runwayml.com/pricing) | Runway's own model family plus third-party models, queryable at runtime | [pricing](https://runwayml.com/pricing) | [runwayml/runway-api-mcp-server](https://github.com/runwayml/runway-api-mcp-server), 23 ★, pushed 2026-09-30 |
+| **[Canva](#3-canva)** | No first-party MCP server documented | Yes | [check](https://www.canva.com/pricing/) | Canva’s own generative features inside the editor | [pricing](https://www.canva.com/pricing/) | [canva-sdks/canva-connect-api-starter-kit](https://github.com/canva-sdks/canva-connect-api-starter-kit), 233 ★, pushed 2026-09-30 |
+| **[CapCut](#4-capcut)** | No first-party MCP server documented | No | n/a | CapCut’s own in-editor AI features | n/a | n/a |
+| **[VEED](#5-veed)** | No first-party MCP server documented | Yes | [check](https://www.veed.io/pricing) | VEED’s own AI video, lip-sync and subtitle models | [pricing](https://www.veed.io/pricing) | n/a |
+| **[Descript](#6-descript)** | Descript documents a Claude/MCP integration alongside its CLI and HTTP API | Yes | [check](https://www.descript.com/pricing) | Descript’s own editing, transcription and voice models | [pricing](https://www.descript.com/pricing) | n/a |
 <!-- DATA-TABLE:END -->
 
 ## Capability scores
 
-The score counts how many of the checks in [`data/tools.json`](data/tools.json) → `capabilityChecks` a tool passes. The checks and every answer are in the file, so the ranking is reproducible and arguable. Disagree with a cell? Open an issue naming the tool, the check and the evidence.
+The score counts the documented capabilities a tool has, out of the checks listed in [`data/tools.json`](data/tools.json) under `capabilityChecks`. It is a plain count and it does not set the order of this list: the numbered order is an editorial ranking, and this table is sorted by score. The checks and every answer are in the file, so each cell can be checked. Disagree with a cell? Open an issue naming the tool, the check and the evidence.
 
 <!-- CAPABILITY-SCORES:START -->
 | Tool | Multi model | Native assembly | REST API | Batch fan out | Cost visibility | Score |
@@ -72,9 +79,9 @@ The score counts how many of the checks in [`data/tools.json`](data/tools.json) 
 - **Standout:** native assembly nodes, so the edit never leaves the canvas
 - **Links:**
   - [Homepage](https://www.wireflow.ai)
+  - [Wireflow AI video workflow page](https://www.wireflow.ai/features/ai-video-workflow)
   - [Docs](https://www.wireflow.ai/docs/mcp)
   - [Pricing](https://www.wireflow.ai/pricing)
-  - [Wireflow](https://www.wireflow.ai/ai-video-generator)
   - [headless video editor for automation](https://www.wireflow.ai/features/headless-video-editor-for-automation)
   - [visual node editor](https://www.wireflow.ai/features/visual-node-editor)
 
@@ -101,7 +108,7 @@ https://www.wireflow.ai/api/mcp
   - [Pricing](https://runwayml.com/pricing)
   - [runwayml/runway-api-mcp-server](https://github.com/runwayml/runway-api-mcp-server)
 
-The MCP server is not published to npm — clone and build it, then point your MCP config at `build/index.js`. Needs a Runway developer API key.
+The MCP server is not published to npm, so clone and build it, then point your MCP config at `build/index.js`. Needs a Runway developer API key.
 ```bash
 git clone https://github.com/runwayml/runway-api-mcp-server
 cd runway-api-mcp-server
@@ -144,7 +151,7 @@ npm install
 
 - **What it is:** CapCut started as a real editor and grew AI generation into it. The AI video generator turns text, images or keyframes into video, an AI image generator handles stills, and Video Studio builds videos from scratch with AI assistance.
 - **Limits:** CapCut is built for a human sitting at a timeline. There is no node graph, no batch fan out across prompt variants, and no per node cost readout. An API for driving CapCut programmatically is not listed as of 2026, so scaling means more editors rather than more throughput.
-- **Note:** Checked 2026-09-01: no public developer docs and no reachable pricing page URL — every pricing path tried returned 404, so nothing is linked rather than guessing one.
+- **Note:** Checked 2026-09-01: no public developer docs and no reachable pricing page URL. Every pricing path tried returned 404, so nothing is linked rather than guessing one.
 - **Links:**
   - [Homepage](https://www.capcut.com)
 
@@ -161,7 +168,7 @@ npm install
   - [Docs](https://www.veed.io/api)
   - [Pricing](https://www.veed.io/pricing)
 
-**Getting started:** no public CLI or SDK to install — start from the [docs](https://www.veed.io/api).
+**Getting started:** no public CLI or SDK to install, so start from the [docs](https://www.veed.io/api).
 
 ### 6. Descript
 
@@ -249,7 +256,7 @@ Start free on the [Wireflow AI video generator](https://www.wireflow.ai/ai-video
 
 ## How this list is maintained
 
-- [`data/tools.json`](data/tools.json) is the source of truth. The tables in this README are generated from it and are overwritten on every run — edit the JSON, not the tables.
+- [`data/tools.json`](data/tools.json) is the source of truth. The tables in this README are generated from it and are overwritten on every run, so edit the JSON, not the tables.
 - [`scripts/update.js`](scripts/update.js) fetches star counts and latest release tags from the GitHub API for the tools that publish an official repo, stamps the check date, and regenerates the tables. `--offline` regenerates without the network; `--check` exits non-zero if the README has drifted from the data.
 - [`.github/workflows/refresh.yml`](.github/workflows/refresh.yml) runs it weekly and on manual dispatch, and commits only when the data actually changed.
 - Prices are deliberately not stored as numbers. A stale price in a comparison table is worse than no price, so the table links to each vendor's own pricing page.
@@ -260,7 +267,7 @@ Corrections and additions are welcome, including corrections to the entry for th
 
 ## License
 
-[CC0 1.0 Universal](LICENSE) — public domain. Take the data, fork the list, no attribution required.
+[CC0 1.0 Universal](LICENSE), public domain. Take the data, fork the list, no attribution required.
 
 ---
 
