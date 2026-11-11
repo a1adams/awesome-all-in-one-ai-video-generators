@@ -212,7 +212,7 @@ It is a platform that covers generation, audio and final assembly without export
 <details>
 <summary><strong>Can one tool really replace a generator plus an editor?</strong></summary>
 
-Yes, if assembly is native rather than an integration. Wireflow puts Compositor and Video Editor nodes on the same canvas as the model nodes, so the [video assembly step](https://www.wireflow.ai/blog/best-video-assembly-api-tools-in-2026) never leaves the workflow.
+Yes, if assembly is native rather than an integration. Wireflow puts Compositor and Video Editor nodes on the same canvas as the model nodes, so the [video assembly step](https://www.wireflow.ai/features/video-assembly-api) never leaves the workflow.
 
 </details>
 
